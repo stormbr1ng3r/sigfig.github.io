@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>your name here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header>
+    <p class="deco" aria-hidden="true">✦ &nbsp; ✧ &nbsp; ✦</p>
+    <!-- EDIT: change to your name / fandom handle -->
+    <h1>your name</h1>
+    <p class="handle">@handle &nbsp;·&nbsp; fandom account</p>
+    <nav aria-label="page sections">
+      <a href="#about">about</a>
+      <span aria-hidden="true">·</span>
+      <a href="#qa">q&amp;a</a>
+      <span aria-hidden="true">·</span>
+      <a href="#links">links</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── About ───────────────────────────────────────── -->
+    <section id="about">
+      <h2><em>about me</em></h2>
+      <div class="card about-card">
+        <!-- EDIT: write your bio here -->
+        <p>
+          hi! i'm [name]. this is my fandom space —
+          i write fic, make graphics, and lose sleep over characters.
+        </p>
+        <ul class="about-list">
+          <!-- EDIT: change or add/remove these bullets -->
+          <li>✦ she / her &nbsp;·&nbsp; 20s</li>
+          <li>✦ multifandom</li>
+          <li>✦ ao3 writer</li>
+          <li>✦ dms open, mostly harmless</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Q&A ─────────────────────────────────────────── -->
+    <section id="qa">
+      <h2><em>q&amp;a</em></h2>
+
+      <!-- answered questions — rendered by main.js from QAS array -->
+      <div id="qa-columns" class="qa-columns" aria-live="polite" aria-label="answered questions">
+        <p class="qa-loading" aria-label="loading">✦</p>
+      </div>
+
+      <!-- submission form -->
+      <div class="card ask-box">
+        <h3>ask me something ✦</h3>
+        <!--
+          FORMSPREE SETUP:
+          1. Go to formspree.io and create a free account
+          2. Create a new form — copy the form endpoint (looks like /f/abcdefgh)
+          3. Replace YOUR_FORMSPREE_ID below with that code
+        -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <textarea
+            name="question"
+            placeholder="what's on your mind?"
+            required
+            rows="4"
+          ></textarea>
+          <div class="form-row">
+            <input
+              type="text"
+              name="name"
+              placeholder="name or anon"
+            />
+            <button type="submit">send ✦</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── Links ───────────────────────────────────────── -->
+    <section id="links">
+      <h2><em>find me</em></h2>
+      <div class="links-wrap">
+        <!-- EDIT: replace # with your actual URLs -->
+        <a href="#" class="link-pill" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">✦</span> ao3
+        </a>
+        <a href="#" class="link-pill" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">✦</span> twitter
+        </a>
+        <!-- add more link-pills here as needed -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>✦ &nbsp; made with love &nbsp; ✦</p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
